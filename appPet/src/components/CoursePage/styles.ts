@@ -7,10 +7,16 @@ export const styles = StyleSheet.create({
         paddingBottom: 100,
     },
     conteudoText: {
-        padding: 30,
+        padding: 24,
         paddingBottom: 400,
-        fontSize: 19,
+        fontSize: 17,
         fontFamily: theme.fonts.text400,
+        textAlign: "justify",
+    },
+    title: {
+        paddingHorizontal: 24,
+        fontFamily: theme.fonts.title700,
+        fontSize: 20,
     },
     frame: {},
     activity: {

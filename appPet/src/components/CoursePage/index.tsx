@@ -7,9 +7,10 @@ import { styles } from "./styles";
 type Props = {
     videoID: String;
     text: String;
+    title: String;
 };
 
-export function CoursePage({ videoID, text, ...rest }: Props) {
+export function CoursePage({ videoID, text, title, ...rest }: Props) {
     const [isReady, setIsReady] = useState(false);
 
     return (
@@ -37,6 +38,7 @@ export function CoursePage({ videoID, text, ...rest }: Props) {
                 />
             </View>
             <ScrollView contentContainerStyle={styles.conteudo}>
+                <Text style={styles.title}>{title}</Text>
                 <Text style={styles.conteudoText}>{text}</Text>
             </ScrollView>
         </View>
