@@ -3,15 +3,18 @@ import { StyleSheet } from "react-native";
 import { theme } from "../../global/styles/theme";
 
 export const styles = StyleSheet.create({
-    conteudo: {
-        paddingBottom: 100,
+    container:{
+        flex:1,
+        paddingBottom: 10,
     },
     conteudoText: {
         padding: 24,
         paddingBottom: 400,
-        fontSize: 17,
+        fontSize: 15,
         fontFamily: theme.fonts.text400,
         textAlign: "justify",
+        color: theme.colors.heading,
+
     },
     title: {
         paddingHorizontal: 24,

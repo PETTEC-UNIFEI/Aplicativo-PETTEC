@@ -3,8 +3,8 @@ import LaTexLogo from "../assets/latex.png";
 import ReactLogo from "../assets/react.png";
 import InProgressLogo from "../assets/inProgress.png";
 
-import PythonCourse from "../screens/Courses/PythonCourse";
-import LatexCourse  from "../screens/Courses/LatexCourse";
+import PythonCourse from "../screens/Courses/PythonCourse/Content";
+import LatexCourse  from "../screens/Courses/LatexCourse/Content";
 
 export const materials = [
     {

@@ -14,7 +14,7 @@ export function CoursePage({ videoID, text, title, ...rest }: Props) {
     const [isReady, setIsReady] = useState(false);
 
     return (
-        <View>
+        <View style={styles.container}>
             <View
                 style={
                     isReady
@@ -37,7 +37,7 @@ export function CoursePage({ videoID, text, title, ...rest }: Props) {
                     videoId={videoID.toString()}
                 />
             </View>
-            <ScrollView contentContainerStyle={styles.conteudo}>
+            <ScrollView>
                 <Text style={styles.title}>{title}</Text>
                 <Text style={styles.conteudoText}>{text}</Text>
             </ScrollView>

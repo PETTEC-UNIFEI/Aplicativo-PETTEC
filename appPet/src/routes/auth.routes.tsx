@@ -49,6 +49,15 @@ export function AuthRoutes() {
                         />
                     ))}
                 </>
+                <>
+                    {courses.map((course) => (
+                        <Stack.Screen
+                            key={course.id}
+                            name={course.id}
+                            component={course.component1}
+                        />
+                    ))}
+                </>
 
             </Stack.Navigator>
 

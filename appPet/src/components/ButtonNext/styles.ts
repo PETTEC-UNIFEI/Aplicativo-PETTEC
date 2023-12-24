@@ -6,11 +6,12 @@ import { theme } from "../../global/styles/theme";
 export const styles = StyleSheet.create({
     buttons: {
         width: "100%",
-        height: 50,
+        height: 60,
         flexDirection: "row",
         alignItems: "center",
         paddingBottom: 30,
         backgroundColor: "white",
+        marginTop: 10,
     },
     button: {
         width: "50%",
