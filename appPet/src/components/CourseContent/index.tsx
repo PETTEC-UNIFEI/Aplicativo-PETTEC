@@ -9,11 +9,14 @@ import { styles } from "./styles";
 import { CoursePage } from "../CoursePage";
 
 import { ButtonNext } from "../ButtonNext";
+import { idText } from "typescript";
+import { useNavigation } from "@react-navigation/native";
 
 export  function CourseContent({coursePages}) {
     const viewPagerRef = useRef<PagerView>(null); //reference: https://stackoverflow.com/questions/69835794/react-native-view-pager-setpage-is-not-working-on-ios
 
     const [currentPage, setCurrentPage] = useState(0);
+    const navigation = useNavigation();
     function handlePrev() {
         if (currentPage > 0) {
             setCurrentPage(currentPage - 1);
@@ -25,6 +28,9 @@ export  function CourseContent({coursePages}) {
         if (currentPage < coursePages.length - 1) {
             setCurrentPage(currentPage + 1);
             viewPagerRef.current?.setPage(currentPage + 1);
+        }
+        if(currentPage == coursePages.length-1){
+            navigation.navigate("FinishCourse");
         }
     }
 

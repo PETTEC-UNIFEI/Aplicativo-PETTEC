@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import Home from "../screens/Home";
 import SignIn from "../screens/SignIn";
+import FinishCourse from "../screens/Courses/FinishCourse";
 
 import { courses } from "../utils/courseList";
 import { tutorials } from "../utils/tutorialList";
@@ -24,6 +25,7 @@ export function AuthRoutes() {
             <Stack.Navigator initialRouteName='SignIn' screenOptions={{headerShown: false}}>
                 <Stack.Screen name="SignIn" component={SignIn} />
                 <Stack.Screen name="Home" component={Home} />
+                <Stack.Screen name="FinishCourse" component={FinishCourse} />
 
                 {/* Generate a map for the list courseList.ts to generate a Screen for each course */}
                 <>
