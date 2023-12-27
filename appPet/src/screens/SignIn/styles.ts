@@ -6,7 +6,7 @@ import  {theme} from '../../global/styles/theme';
 export const styles = StyleSheet.create(
     {
     container: {
-        backgroundColor: '#FFFFFF',
+        backgroundColor: theme.colors.background,
         flex: 1,
         display: 'flex',
         justifyContent: 'center',

@@ -5,10 +5,13 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "../screens/Home";
 import SignIn from "../screens/SignIn";
 import FinishCourse from "../screens/Courses/FinishCourse";
+import Login from "../screens/Login";
+import SignUp from "../screens/SignUp";
 
 import { courses } from "../utils/courseList";
 import { tutorials } from "../utils/tutorialList";
 import { materials } from "../utils/materialList";
+
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +27,8 @@ export function AuthRoutes() {
         <NavigationContainer theme={navTheme}>
             <Stack.Navigator initialRouteName='SignIn' screenOptions={{headerShown: false}}>
                 <Stack.Screen name="SignIn" component={SignIn} />
+                <Stack.Screen name="Login" component={Login} />
+                <Stack.Screen name="SignUp" component={SignUp} />
                 <Stack.Screen name="Home" component={Home} />
                 <Stack.Screen name="FinishCourse" component={FinishCourse} />
 

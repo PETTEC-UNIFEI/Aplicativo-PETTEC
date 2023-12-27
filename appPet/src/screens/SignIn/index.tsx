@@ -9,7 +9,7 @@ export default function SignIn(){
     const navigation = useNavigation();
 
     function handleSignIn(){
-        navigation.navigate("Home");
+        navigation.navigate("Login");
     }
     return (
         <View style={styles.container}>
