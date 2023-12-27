@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         paddingBottom: 30,
-        backgroundColor: "white",
+        backgroundColor: theme.colors.background,
         marginTop: 10,
     },
     button: {
@@ -20,7 +20,6 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: "center",
         height: 50,
-        borderWidth: 0.5,
 
     },
     buttonText: {
@@ -31,7 +30,7 @@ export const styles = StyleSheet.create({
         color: theme.colors.primary,
     },
     imageButton: {
-        width: 32,
-        height: 32,
+        width: 22,
+        height: 22,
     },
 });
