@@ -10,29 +10,6 @@ import config from "../../../config/config.json";
 
 export default function SignUp() {
 
-    const [name, setName]=useState(null);
-    const [password, setPassword]=useState(null);
-    const [email, setEmail]=useState(null);
-    const [course, setCourse]=useState(null);
-    const [message, setMessage] = useState(null);
-
-    //Send forms data to the backend
-    async function registerUser(){
-        let reqs = await fetch(config.urlRootNode+'create',{
-            method: 'POST',
-            headers:{
-                'Accept':'application/json',
-                'Content-Type':'application/json'
-            },
-            body: JSON.stringify({
-                nameUser: name,
-                passwordUser: password,
-                emailUser: email,
-                courseUser: course
-            })
-        });
-}
-
     const navigation = useNavigation();
     function handleHome(){
         navigation.navigate("Home");
@@ -55,7 +32,7 @@ export default function SignUp() {
                 <TextInput style={styles.input} placeholder='********' secureTextEntry={true} onChangeText={(text)=>setPassword(text)}/>
                 <Text> Repetir Senha</Text>
                 <TextInput style={styles.input} placeholder='********' secureTextEntry={true} />
-                <Pressable onPress={registerUser} style={styles.butStyle}>
+                <Pressable onPress={handleHome} style={styles.butStyle}>
                     <Text style={styles.textBut}>{'Entrar'}</Text>
                 </Pressable>
             </View>
